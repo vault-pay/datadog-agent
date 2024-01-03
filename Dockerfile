@@ -21,3 +21,6 @@ ENV DD_BIND_HOST=$RENDER_SERVICE_NAME
 ENV DD_HOSTNAME=$RENDER_SERVICE_NAME
 
 COPY datadog.yaml /etc/datadog-agent/datadog.yaml
+
+RUN echo 'prometheus_metrics_enabled: true' >> /etc/datadog-agent/conf.d/prometheus.d/conf.yaml
+
