@@ -650,12 +650,12 @@ logs_enabled: true
 ## Uncomment this parameter and the one below to enable them.
 ## See https://docs.datadoghq.com/agent/apm/
 #
-# apm_config:
+apm_config:
 
   ## @param enabled - boolean - optional - default: true
   ## Set to true to enable the APM Agent.
   #
-  # enabled: true
+  enabled: true
 
   ## @param env - string - optional - default: none
   ## The environment tag that Traces should be tagged with.
