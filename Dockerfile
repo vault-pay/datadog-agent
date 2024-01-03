@@ -24,6 +24,6 @@ ENV DD_HOSTNAME=$RENDER_SERVICE_NAME
 RUN apt-get update && apt-get install -y vim
 
 COPY datadog.yaml /etc/datadog-agent/datadog.yaml
+COPY conf.yaml /etc/datadog-agent/conf.d/prometheus.d/conf.yaml
 
-RUN echo 'prometheus_metrics_enabled: true' >> /etc/datadog-agent/conf.d/prometheus.d/conf.yaml
 
