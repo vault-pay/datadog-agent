@@ -1,0 +1,9 @@
+metrics_configs:
+
+  - type: prometheus 
+    prometheus_url: https://prometheus-custom.onrender.com:9090
+
+integrations:
+
+  prometheus:
+    prometheus_url: https://prometheus-custom.onrender.com:9090
