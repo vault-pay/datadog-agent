@@ -2,8 +2,8 @@ init_config:
 
 instances:
   - prometheus_url: http://prometheus-custom:9090/metrics
-    namespace: "vaultcore"
-    metrics:
+  - namespace: "vaultcore"
+  - metrics:
       - "*"
     # If needed, you can specify individual metrics or use regular expressions
     # metrics:
