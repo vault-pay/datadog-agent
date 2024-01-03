@@ -1,0 +1,29 @@
+init_config:
+
+instances:
+  - prometheus_url: https://prometheus-custom.onrender.com:9090/metrics
+    namespace: "vaultcore"
+    metrics:
+      - "*"
+    # If you need more control, you can use specific metric names or regular expressions
+    # metrics:
+    #   - prometheus_metric_name1
+    #   - prometheus_metric_name2
+    #   - /^prometheus_metric_prefix.*/
+    # Optional SSL settings
+    # ssl_cert: /path/to/cert.pem
+    # ssl_private_key: /path/to/key.pem
+    # ssl_ca_cert: /path/to/ca.pem
+    # ssl_verify: false
+
+    # Additional optional settings
+    # labels_mapper:
+    #   flavor: origin
+    #   env: environment
+    # type_overrides:
+    #   metric_name1: gauge
+    #   metric_name2: counter
+
+    # If your Prometheus endpoint requires authentication
+    # username: <USERNAME>
+    # password: <PASSWORD>
